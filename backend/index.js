@@ -19,7 +19,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 
 const corsOptions = {
-    origin: 'https://jobportalapp-phi.vercel.app' , // notice the missing colon
+    origin: 'https://jobportal-mu-one.vercel.app' , // notice the missing colon
     credentials: true
 }
 
