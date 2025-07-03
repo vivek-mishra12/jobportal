@@ -19,11 +19,11 @@ app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 
 const corsOptions = {
-    origin: 'http://localhost:5173' , // notice the missing colon
+    origin: 'https://jobportal-project-five.vercel.app' , // notice the missing colon
     credentials: true
 }
 
-app.use(cors());
+app.use(cors(corsOptions));
 
 const PORT = process.env.PORT || 3000;
 
